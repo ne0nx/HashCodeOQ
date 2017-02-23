@@ -18,4 +18,8 @@ class Endpoint: NSObject {
         self.latency = latency
     }
     
+    func addCache(_ cache: Cache) {
+        caches.append(cache)
+    }
+    
 }

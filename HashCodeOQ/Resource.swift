@@ -43,21 +43,34 @@ class Resource: NSObject {
             Video(number: index, megabytes: Int(megabytes)!)
         }
         
-        var start_endpoint_index = 2
+        var endpoints = [Endpoint]()
+        
+        var start_index = 2
         for endpoint_index in 0..<condition.E {
-            let endpointComponents = dataSet[start_endpoint_index+endpoint_index].components(separatedBy: " ")
+            let endpointComponents = dataSet[start_index+endpoint_index].components(separatedBy: " ")
             
             let endpoint = Endpoint(latency: Int(endpointComponents[0])!)
             let caches_count = Int(endpointComponents[1])!
             
             for cache_index in 0..<caches_count {
                 
+                let cacheComponents = dataSet[start_index+endpoint_index+cache_index+1].components(separatedBy: " ")
+                
+                let cache_number = Int(cacheComponents[0])!
+                let cache_latency = Int(cacheComponents[1])!
+                
+                let cache = Cache()
+                cache.number = cache_number
+                cache.latency = cache_latency
+                endpoint.addCache(cache)
             }
             
+            start_index += caches_count
+            
+            endpoints.append(endpoint)
         }
         
-        let data = Array(dataSet[1..<dataSet.count])
-        return (condition, data)
+        return nil
     }
     
     class func filePath(by set: DataSet) -> String? {

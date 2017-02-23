@@ -19,7 +19,7 @@ class Output {
         
         for cache in caches {
             data += "\n"
-            data += "\(cache.index) "
+            data += "\(cache.number) "
             
             for video in cache.videos {
                 
