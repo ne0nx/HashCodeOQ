@@ -11,7 +11,7 @@ import Cocoa
 class Resource: NSObject {
 
     enum DataSet: String {
-        case example
+        case example = "/Users/dmitriy/Desktop/Online Qualification/HashCodeOQ/HashCodeOQ/data/example.in"
         case kittens
         case me_at_the_zoo
         case trending_today
@@ -36,15 +36,21 @@ class Resource: NSObject {
             X: Int(headerComponents[4])!
         )
         
+        let videosComponents = dataSet[1].components(separatedBy: " ")
+        let videos = videosComponents.enumerated().map { (index, megabytes) -> Video in
+            Video(number: index, megabytes: Int(megabytes)!)
+        }
+        
         let data = Array(dataSet[1..<dataSet.count])
         return (condition, data)
     }
     
     class func filePath(by set: DataSet) -> String {
         
-        let bundle = Bundle.main
+//        let bundle = Bundle.main
         
-        return bundle.path(forResource: set.rawValue, ofType: "in")!
+//        return bundle.path(forResource: set.rawValue, ofType: "in")!
+        return set.rawValue
     }
     
 }

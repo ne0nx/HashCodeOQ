@@ -10,6 +10,13 @@ import Cocoa
 
 class Video: NSObject {
     
+    var number: Int = 0
+    
     var megabytes: Int = 0
+    
+    init(number: Int, megabytes: Int) {
+        self.number = number
+        self.megabytes = megabytes
+    }
     
 }

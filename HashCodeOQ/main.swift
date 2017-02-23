@@ -8,5 +8,6 @@
 
 import Foundation
 
-print("Hello, World!")
+let res = Resource.dataSet(by: .example)
 
+print(res)
