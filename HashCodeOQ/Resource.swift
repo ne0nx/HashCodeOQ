@@ -94,7 +94,7 @@ class Resource: NSObject {
             requests.append(request)
         }
         
-        return nil
+        return (condition, videos, endpoints, requests)
     }
     
     class func filePath(by set: DataSet) -> String? {
