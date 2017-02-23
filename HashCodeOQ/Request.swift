@@ -1,5 +1,5 @@
 //
-//  Video.swift
+//  Request.swift
 //  HashCodeOQ
 //
 //  Created by Dmitriy Karachentsov on 23/2/17.
@@ -8,8 +8,12 @@
 
 import Cocoa
 
-class Video: NSObject {
+class Request: NSObject {
+
+    weak var endpoint: Endpoint?
     
-    var megabytes: Int = 0
+    var requestsCount: Int = 0
+    
+    weak var video: Video?
     
 }

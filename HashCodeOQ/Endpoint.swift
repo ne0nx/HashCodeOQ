@@ -1,5 +1,5 @@
 //
-//  Video.swift
+//  Endpoint.swift
 //  HashCodeOQ
 //
 //  Created by Dmitriy Karachentsov on 23/2/17.
@@ -8,8 +8,10 @@
 
 import Cocoa
 
-class Video: NSObject {
+class Endpoint: NSObject {
+
+    var latency: Int = 0
     
-    var megabytes: Int = 0
+    var caches = [Cache]()
     
 }

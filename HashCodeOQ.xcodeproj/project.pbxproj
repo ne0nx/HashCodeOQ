@@ -12,6 +12,8 @@
 		2C9A95C41E5F704B0039074D /* Condition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9A95C21E5F704B0039074D /* Condition.swift */; };
 		2C9A95C51E5F704B0039074D /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9A95C31E5F704B0039074D /* Resource.swift */; };
 		2C9A95C91E5F70CE0039074D /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9A95C81E5F70CE0039074D /* Cache.swift */; };
+		2C9A95CB1E5F71400039074D /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9A95CA1E5F71400039074D /* Endpoint.swift */; };
+		2C9A95CD1E5F71B00039074D /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9A95CC1E5F71B00039074D /* Request.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -38,6 +40,8 @@
 		2C9A95C21E5F704B0039074D /* Condition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Condition.swift; sourceTree = "<group>"; };
 		2C9A95C31E5F704B0039074D /* Resource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
 		2C9A95C81E5F70CE0039074D /* Cache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
+		2C9A95CA1E5F71400039074D /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		2C9A95CC1E5F71B00039074D /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +80,8 @@
 				2C9A95C21E5F704B0039074D /* Condition.swift */,
 				2C9A95C31E5F704B0039074D /* Resource.swift */,
 				2C9A95AD1E5F6A2F0039074D /* main.swift */,
+				2C9A95CA1E5F71400039074D /* Endpoint.swift */,
+				2C9A95CC1E5F71B00039074D /* Request.swift */,
 			);
 			path = HashCodeOQ;
 			sourceTree = "<group>";
@@ -155,6 +161,8 @@
 				2C9A95C91E5F70CE0039074D /* Cache.swift in Sources */,
 				2C9A95C51E5F704B0039074D /* Resource.swift in Sources */,
 				2C9A95C41E5F704B0039074D /* Condition.swift in Sources */,
+				2C9A95CD1E5F71B00039074D /* Request.swift in Sources */,
+				2C9A95CB1E5F71400039074D /* Endpoint.swift in Sources */,
 				2C9A95C11E5F70260039074D /* Video.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
