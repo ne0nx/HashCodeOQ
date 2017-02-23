@@ -14,4 +14,8 @@ class Endpoint: NSObject {
     
     var caches = [Cache]()
     
+    init(latency: Int) {
+        self.latency = latency
+    }
+    
 }

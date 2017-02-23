@@ -43,6 +43,19 @@ class Resource: NSObject {
             Video(number: index, megabytes: Int(megabytes)!)
         }
         
+        var start_endpoint_index = 2
+        for endpoint_index in 0..<condition.E {
+            let endpointComponents = dataSet[start_endpoint_index+endpoint_index].components(separatedBy: " ")
+            
+            let endpoint = Endpoint(latency: Int(endpointComponents[0])!)
+            let caches_count = Int(endpointComponents[1])!
+            
+            for cache_index in 0..<caches_count {
+                
+            }
+            
+        }
+        
         let data = Array(dataSet[1..<dataSet.count])
         return (condition, data)
     }
