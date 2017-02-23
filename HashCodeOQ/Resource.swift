@@ -11,16 +11,18 @@ import Cocoa
 class Resource: NSObject {
 
     enum DataSet: String {
-        case example = "/Users/dmitriy/Desktop/Online Qualification/HashCodeOQ/HashCodeOQ/data/example.in"
+        case example
         case kittens
         case me_at_the_zoo
         case trending_today
         case videos_worth_spreading
     }
     
-    class func dataSet(by set: DataSet) -> (Condition, [String]) {
+    class func dataSet(by set: DataSet) -> (Condition, [String])? {
         
-        let path = filePath(by: set)
+        guard let path = filePath(by: set) else {
+            return nil
+        }
         
         let string = try! String(contentsOfFile: path, encoding: .utf8)
         let components = string.components(separatedBy: "\n")
@@ -45,12 +47,9 @@ class Resource: NSObject {
         return (condition, data)
     }
     
-    class func filePath(by set: DataSet) -> String {
-        
-//        let bundle = Bundle.main
-        
-//        return bundle.path(forResource: set.rawValue, ofType: "in")!
-        return set.rawValue
+    class func filePath(by set: DataSet) -> String? {
+        let bundle = Bundle.main
+        return bundle.path(forResource: set.rawValue, ofType: "in")
     }
     
 }
