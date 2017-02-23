@@ -15,17 +15,27 @@
 		2C9A95CB1E5F71400039074D /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9A95CA1E5F71400039074D /* Endpoint.swift */; };
 		2C9A95CD1E5F71B00039074D /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9A95CC1E5F71B00039074D /* Request.swift */; };
 		629D138B1E5F753100331F08 /* WriteOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629D138A1E5F753100331F08 /* WriteOutput.swift */; };
+		2C9A95CE1E5F75750039074D /* example.in in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2C9A95B51E5F6C1E0039074D /* example.in */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		2C9A95CF1E5F75800039074D /* kittens.in in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2C9A95B61E5F6C1E0039074D /* kittens.in */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		2C9A95D01E5F75800039074D /* me_at_the_zoo.in in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2C9A95B71E5F6C1E0039074D /* me_at_the_zoo.in */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		2C9A95D11E5F75800039074D /* trending_today.in in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2C9A95B81E5F6C1E0039074D /* trending_today.in */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		2C9A95D21E5F75800039074D /* videos_worth_spreading.in in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2C9A95B91E5F6C1E0039074D /* videos_worth_spreading.in */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		2C9A95A81E5F6A2F0039074D /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
 			files = (
+				2C9A95CE1E5F75750039074D /* example.in in CopyFiles */,
+				2C9A95CF1E5F75800039074D /* kittens.in in CopyFiles */,
+				2C9A95D01E5F75800039074D /* me_at_the_zoo.in in CopyFiles */,
+				2C9A95D11E5F75800039074D /* trending_today.in in CopyFiles */,
+				2C9A95D21E5F75800039074D /* videos_worth_spreading.in in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
