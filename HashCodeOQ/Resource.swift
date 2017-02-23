@@ -18,7 +18,7 @@ class Resource: NSObject {
         case videos_worth_spreading
     }
     
-    class func dataSet(by set: DataSet) -> (Condition, [Video], [Endpoint], [Request])? {
+    class func dataSet(by set: DataSet) -> (Condition, [Cache], [Video], [Endpoint], [Request])? {
         
         guard let path = filePath(by: set) else {
             return nil
@@ -43,6 +43,14 @@ class Resource: NSObject {
             Video(number: index, megabytes: Int(megabytes)!)
         }
         
+        var caches = [Cache]()
+        
+        for cache_index in 0..<condition.C {
+            let cache = Cache()
+            cache.number = cache_index
+            caches.append(cache)
+        }
+        
         var endpoints = [Endpoint]()
         
         var start_index = 2
@@ -60,10 +68,10 @@ class Resource: NSObject {
                 let cache_number = Int(cacheComponents[0])!
                 let cache_latency = Int(cacheComponents[1])!
                 
-                let cache = Cache()
-                cache.number = cache_number
-                cache.latency = cache_latency
-                endpoint.addCache(cache)
+                let cache = caches.first { cache -> Bool in
+                    cache.number == cache_number
+                }
+                endpoint.addCache(cache!, latency: cache_latency)
             }
             
             start_index += caches_count
@@ -94,7 +102,7 @@ class Resource: NSObject {
             requests.append(request)
         }
         
-        return (condition, videos, endpoints, requests)
+        return (condition, caches, videos, endpoints, requests)
     }
     
     class func filePath(by set: DataSet) -> String? {

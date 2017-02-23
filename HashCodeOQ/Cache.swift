@@ -12,8 +12,6 @@ class Cache: NSObject {
     
     var number: Int = 0
     
-    var latency: Int = 0
-    
     var videos = [Video]()
     
 }
