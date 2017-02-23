@@ -8,15 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		2C9A95AE1E5F6A2F0039074D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9A95AD1E5F6A2F0039074D /* main.swift */; };
+		629D13821E5F6D4E00331F08 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629D13811E5F6D4E00331F08 /* DataProvider.swift */; };
+		629D13871E5F6DD800331F08 /* kittens.in in CopyFiles */ = {isa = PBXBuildFile; fileRef = 629D13841E5F6DB300331F08 /* kittens.in */; };
+		629D13881E5F6DD800331F08 /* trending_today.in in CopyFiles */ = {isa = PBXBuildFile; fileRef = 629D13851E5F6DB300331F08 /* trending_today.in */; };
+		629D13891E5F6DD800331F08 /* videos_worth_spreading.in in CopyFiles */ = {isa = PBXBuildFile; fileRef = 629D13861E5F6DB300331F08 /* videos_worth_spreading.in */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		2C9A95A81E5F6A2F0039074D /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
+			dstPath = /usr/share/man/man1;
 			dstSubfolderSpec = 0;
 			files = (
+				629D13871E5F6DD800331F08 /* kittens.in in CopyFiles */,
+				629D13881E5F6DD800331F08 /* trending_today.in in CopyFiles */,
+				629D13891E5F6DD800331F08 /* videos_worth_spreading.in in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
@@ -25,6 +32,10 @@
 /* Begin PBXFileReference section */
 		2C9A95AA1E5F6A2F0039074D /* HashCodeOQ */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HashCodeOQ; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C9A95AD1E5F6A2F0039074D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		629D13811E5F6D4E00331F08 /* DataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
+		629D13841E5F6DB300331F08 /* kittens.in */ = {isa = PBXFileReference; lastKnownFileType = text; path = kittens.in; sourceTree = "<group>"; };
+		629D13851E5F6DB300331F08 /* trending_today.in */ = {isa = PBXFileReference; lastKnownFileType = text; path = trending_today.in; sourceTree = "<group>"; };
+		629D13861E5F6DB300331F08 /* videos_worth_spreading.in */ = {isa = PBXFileReference; lastKnownFileType = text; path = videos_worth_spreading.in; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +68,21 @@
 		2C9A95AC1E5F6A2F0039074D /* HashCodeOQ */ = {
 			isa = PBXGroup;
 			children = (
+				629D13831E5F6DAA00331F08 /* Recources */,
 				2C9A95AD1E5F6A2F0039074D /* main.swift */,
+				629D13811E5F6D4E00331F08 /* DataProvider.swift */,
 			);
 			path = HashCodeOQ;
+			sourceTree = "<group>";
+		};
+		629D13831E5F6DAA00331F08 /* Recources */ = {
+			isa = PBXGroup;
+			children = (
+				629D13841E5F6DB300331F08 /* kittens.in */,
+				629D13851E5F6DB300331F08 /* trending_today.in */,
+				629D13861E5F6DB300331F08 /* videos_worth_spreading.in */,
+			);
+			path = Recources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -121,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				629D13821E5F6D4E00331F08 /* DataProvider.swift in Sources */,
 				2C9A95AE1E5F6A2F0039074D /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,6 +277,7 @@
 				2C9A95B31E5F6A2F0039074D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
