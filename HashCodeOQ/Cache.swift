@@ -9,5 +9,7 @@
 import Cocoa
 
 class Cache: NSObject {
+    var index: Int = 0
+    var videos = [Video]()
     
 }

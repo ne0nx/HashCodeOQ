@@ -14,6 +14,7 @@
 		2C9A95C91E5F70CE0039074D /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9A95C81E5F70CE0039074D /* Cache.swift */; };
 		2C9A95CB1E5F71400039074D /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9A95CA1E5F71400039074D /* Endpoint.swift */; };
 		2C9A95CD1E5F71B00039074D /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9A95CC1E5F71B00039074D /* Request.swift */; };
+		629D138B1E5F753100331F08 /* WriteOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629D138A1E5F753100331F08 /* WriteOutput.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -42,6 +43,7 @@
 		2C9A95C81E5F70CE0039074D /* Cache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
 		2C9A95CA1E5F71400039074D /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		2C9A95CC1E5F71B00039074D /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		629D138A1E5F753100331F08 /* WriteOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteOutput.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				2C9A95AD1E5F6A2F0039074D /* main.swift */,
 				2C9A95CA1E5F71400039074D /* Endpoint.swift */,
 				2C9A95CC1E5F71B00039074D /* Request.swift */,
+				629D138A1E5F753100331F08 /* WriteOutput.swift */,
 			);
 			path = HashCodeOQ;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				629D138B1E5F753100331F08 /* WriteOutput.swift in Sources */,
 				2C9A95AE1E5F6A2F0039074D /* main.swift in Sources */,
 				2C9A95C91E5F70CE0039074D /* Cache.swift in Sources */,
 				2C9A95C51E5F704B0039074D /* Resource.swift in Sources */,
@@ -295,6 +299,7 @@
 				2C9A95B31E5F6A2F0039074D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
