@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "F890DB2B381D550B72880308D127ED5198400969",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "F890DB2B381D550B72880308D127ED5198400969" : 9223372036854775807,
+    "86CEFFCBF019AA929A15C3363043B039516F8235" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "8ECF23F4-97EE-40B3-B893-213046AB32CC",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "F890DB2B381D550B72880308D127ED5198400969" : "HashCodeOQ\/",
+    "86CEFFCBF019AA929A15C3363043B039516F8235" : "..\/Google\/GCPizzaProject2"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "HashCodeOQ",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "HashCodeOQ.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:ne0nx\/GCPizzaProject.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "86CEFFCBF019AA929A15C3363043B039516F8235"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ne0nx\/HashCodeOQ.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F890DB2B381D550B72880308D127ED5198400969"
+    }
+  ]
+}

@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		2C9A95AE1E5F6A2F0039074D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9A95AD1E5F6A2F0039074D /* main.swift */; };
+		2C9A95C11E5F70260039074D /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9A95C01E5F70260039074D /* Video.swift */; };
+		2C9A95C41E5F704B0039074D /* Condition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9A95C21E5F704B0039074D /* Condition.swift */; };
+		2C9A95C51E5F704B0039074D /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9A95C31E5F704B0039074D /* Resource.swift */; };
+		2C9A95C91E5F70CE0039074D /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9A95C81E5F70CE0039074D /* Cache.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +29,15 @@
 /* Begin PBXFileReference section */
 		2C9A95AA1E5F6A2F0039074D /* HashCodeOQ */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HashCodeOQ; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C9A95AD1E5F6A2F0039074D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		2C9A95B51E5F6C1E0039074D /* example.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = example.in; sourceTree = "<group>"; };
+		2C9A95B61E5F6C1E0039074D /* kittens.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = kittens.in; sourceTree = "<group>"; };
+		2C9A95B71E5F6C1E0039074D /* me_at_the_zoo.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = me_at_the_zoo.in; sourceTree = "<group>"; };
+		2C9A95B81E5F6C1E0039074D /* trending_today.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = trending_today.in; sourceTree = "<group>"; };
+		2C9A95B91E5F6C1E0039074D /* videos_worth_spreading.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = videos_worth_spreading.in; sourceTree = "<group>"; };
+		2C9A95C01E5F70260039074D /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		2C9A95C21E5F704B0039074D /* Condition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Condition.swift; sourceTree = "<group>"; };
+		2C9A95C31E5F704B0039074D /* Resource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
+		2C9A95C81E5F70CE0039074D /* Cache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +70,26 @@
 		2C9A95AC1E5F6A2F0039074D /* HashCodeOQ */ = {
 			isa = PBXGroup;
 			children = (
+				2C9A95B41E5F6C1E0039074D /* data */,
+				2C9A95C81E5F70CE0039074D /* Cache.swift */,
+				2C9A95C01E5F70260039074D /* Video.swift */,
+				2C9A95C21E5F704B0039074D /* Condition.swift */,
+				2C9A95C31E5F704B0039074D /* Resource.swift */,
 				2C9A95AD1E5F6A2F0039074D /* main.swift */,
 			);
 			path = HashCodeOQ;
+			sourceTree = "<group>";
+		};
+		2C9A95B41E5F6C1E0039074D /* data */ = {
+			isa = PBXGroup;
+			children = (
+				2C9A95B51E5F6C1E0039074D /* example.in */,
+				2C9A95B61E5F6C1E0039074D /* kittens.in */,
+				2C9A95B71E5F6C1E0039074D /* me_at_the_zoo.in */,
+				2C9A95B81E5F6C1E0039074D /* trending_today.in */,
+				2C9A95B91E5F6C1E0039074D /* videos_worth_spreading.in */,
+			);
+			path = data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,6 +152,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C9A95AE1E5F6A2F0039074D /* main.swift in Sources */,
+				2C9A95C91E5F70CE0039074D /* Cache.swift in Sources */,
+				2C9A95C51E5F704B0039074D /* Resource.swift in Sources */,
+				2C9A95C41E5F704B0039074D /* Condition.swift in Sources */,
+				2C9A95C11E5F70260039074D /* Video.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
