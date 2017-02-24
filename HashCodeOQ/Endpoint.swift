@@ -14,14 +14,14 @@ class Endpoint: NSObject {
     
     var latency: Int = 0
     
-    var caches: [Cache: Int] = [:]
+    var caches: [Cache] = []
     
     init(latency: Int) {
         self.latency = latency
     }
     
-    func addCache(_ cache: Cache, latency: Int) {
-        caches[cache] = latency
+    func addCache(_ cache: Cache) {
+        caches.append(cache)
     }
     
 }

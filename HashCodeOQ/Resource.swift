@@ -18,11 +18,16 @@ class Resource: NSObject {
         case videos_worth_spreading
     }
     
-    class func dataSet(by set: DataSet) -> (Condition, [Cache], [Video], [Endpoint], [Request])? {
+    struct ParsedSet {
+        var condition: Condition
+        var videos: [Video]
+        var endpoints: [Endpoint]
+        var requests: [Request]
+    }
+    
+    class func dataSet(by set: DataSet) -> ParsedSet {
         
-        guard let path = filePath(by: set) else {
-            return nil
-        }
+        let path = filePath(by: set)!
         
         let string = try! String(contentsOfFile: path, encoding: .utf8)
         let components = string.components(separatedBy: "\n")
@@ -43,14 +48,6 @@ class Resource: NSObject {
             Video(number: index, megabytes: Int(megabytes)!)
         }
         
-        var caches = [Cache]()
-        
-        for cache_index in 0..<condition.C {
-            let cache = Cache()
-            cache.number = cache_index
-            caches.append(cache)
-        }
-        
         var endpoints = [Endpoint]()
         
         var start_index = 2
@@ -68,10 +65,11 @@ class Resource: NSObject {
                 let cache_number = Int(cacheComponents[0])!
                 let cache_latency = Int(cacheComponents[1])!
                 
-                let cache = caches.first { cache -> Bool in
-                    cache.number == cache_number
-                }
-                endpoint.addCache(cache!, latency: cache_latency)
+                let cache = Cache()
+                
+                cache.number = cache_number
+                cache.latency = cache_latency
+                endpoint.addCache(cache)
             }
             
             start_index += caches_count
@@ -88,21 +86,13 @@ class Resource: NSObject {
             
             let request = Request()
             
-            let video = videos.first { video -> Bool in
-                video.number == Int(requestComponents[0])!
-            }
-            
-            let endpoint = endpoints.first { endpoint -> Bool in
-                endpoint.number == Int(requestComponents[1])!
-            }
-            
-            request.endpoint = endpoint
-            request.video = video
-            request.requestsCount = Int(requestComponents[2])!
+            request.endpoint = Int(requestComponents[1])!
+            request.video = Int(requestComponents[0])!
+            request.requests_сount = Int(requestComponents[2])!
             requests.append(request)
         }
         
-        return (condition, caches, videos, endpoints, requests)
+        return ParsedSet(condition: condition, videos: videos, endpoints: endpoints, requests: requests)
     }
     
     class func filePath(by set: DataSet) -> String? {

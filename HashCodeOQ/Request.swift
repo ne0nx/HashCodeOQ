@@ -9,11 +9,11 @@
 import Cocoa
 
 class Request: NSObject {
-
-    weak var endpoint: Endpoint?
     
-    var requestsCount: Int = 0
+    var requests_сount: Int = 0
     
-    weak var video: Video?
+    var endpoint: Int = 0
+    
+    var video: Int = 0
     
 }
