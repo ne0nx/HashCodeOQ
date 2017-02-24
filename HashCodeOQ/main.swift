@@ -10,7 +10,7 @@ import Foundation
 
 func a() {
     
-    let res = Resource.dataSet(by: .example)
+    let res = Resource.dataSet(by: .me_at_the_zoo)
     
     let endpoints = res.endpoints
     let requests = res.requests
@@ -38,9 +38,13 @@ func a() {
         cache_score[cache.key] = cache.value.0/cache.value.1
     }
     
+    let sorded_cache_score = cache_score.sorted { (cache1, cache2) -> Bool in
+        cache1.value < cache2.value
+    }
+    
     print("------------------------")
     print("Cache/Score")
-    cache_score.forEach { (key, value) in
+    sorded_cache_score.forEach { (key, value) in
         print("\(key) - \(value)")
     }
     
@@ -55,11 +59,24 @@ func a() {
         }
     }
     
+    //Удалить все ненужные видео
+    //Потом сортировка
+    
+    let sorted_video_requests = video_requests.sorted { (video1, video2) -> Bool in
+        video1.value > video2.value
+    }
+    
     print("------------------------")
     print("Video/Requests")
-    video_requests.forEach { (key, value) in
+    sorted_video_requests.forEach { (key, value) in
         print("\(key) - \(value)")
     }
+    
+    //1) Удалить видео, которые не помещаються в cache из за своего размера
+    //2) Удалить видео, которые не используються не одним endpoint
+    //3) Удалить видео, которые принадлежат endpoint-ам без caches
+    //4) Перенести видео по score в самые доступные caches
+    //5)
     
     // more popular caches
     
